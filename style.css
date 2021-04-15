@@ -5,3 +5,73 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+.afastamento-template {
+    padding: 2vw;
+}
+
+.titulo-produtos {
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+    background-color:#cfa38e;
+}
+
+.template-produtos {
+    display: grid;
+    grid-template-rows: repeat(17, 1fr);
+}
+
+.infos-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 2rem;
+    font-style: italic;
+    background-color:#c0aca3a2;
+}
+
+.pesquisa-produtos {
+    justify-self:normal;
+}
+
+
+.abas-produtos1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color:#BFACA4;
+}
+
+.abas-produtos2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color:#F2F2F2;
+}
+
+.abas-produtos1 div, .abas-produtos2 div,
+.infos-produtos div {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.imagens-produtos {
+    border-radius: 50%;
+    width: 10vw;
+}
+
+.botao-quantidade {
+    height: 3vh;
+    width: 10vh;
+    text-align: center;
+    border-color: #c0aca3a2;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.botao-adicionar-quantidade {
+    height: 3vh;
+    background-color: #c26d4e8f;
+}
