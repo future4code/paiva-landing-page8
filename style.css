@@ -5,3 +5,118 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+/* AQUI É O HEADER */
+
+h1 {
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 15vh;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100vw;
+}
+
+#titulo-header {
+    opacity: 0.9;
+    background-color: #5b321c;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    z-index: -1000;
+}
+
+#logo-header {
+    display: flex;
+    height: auto;
+    width: 10vw;
+    height: 11vh;
+
+}
+
+#logo {
+    display: flex;
+    width: 20vh;
+}
+
+#buy-icon {
+    position: fixed;
+    top: 2.5vh;
+    right: 0;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+#buy {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+#mercado {
+    top: 38px;
+    left: 350px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+
+}
+
+#comida-pronta {
+    top: 38px;
+    left: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+#contato {
+    top: 38px;
+    left: 590px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+a:link {
+        color: white;
+        text-decoration: none;
+      }
+      
+a:visited {
+        color: white;
+      }
+      
+a:hover {
+    color: #fdc400;
+    transition: color .250s ease-in-out;
+}
+      
+a:active {
+        color: black;
+      }
+}
+
+@media screen and (max-device-width: 320px) and (max-device-width: 420px) {
+
+}
+
+/* AQUI É O FOOTER */ 
+
