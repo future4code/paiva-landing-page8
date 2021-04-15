@@ -8,48 +8,60 @@
 
 /* AQUI É O HEADER */
 
-h1 {
+#home {
     letter-spacing: 1px;
     font-size: 30px;
     color: white;
-    position: absolute;
-    left: 15vh;
+    font-weight: 100;
+
 }
 
 header {
     display: flex;
-    position: relative;
-    width: 100vw;
+    position: fixed;
+    justify-content: space-between;
+    width: 100vw;   
+    background-image: linear-gradient(to right, #693920 , #22130b);
+    box-shadow: inset 0px 0px 15px 0px #00000063;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    
+}
+
+a {
+    margin: 1vw;
+    outline: none;
+}
+
+#all-header {
+    display: flex;
+    justify-content: center;
+
 }
 
 #titulo-header {
     opacity: 0.9;
-    background-color: #5b321c;
     display: flex;
-    position: absolute;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 10vh;
-    z-index: -1000;
 }
 
 #logo-header {
     display: flex;
-    height: auto;
-    width: 10vw;
-    height: 11vh;
-
 }
 
 #logo {
-    display: flex;
-    width: 20vh;
+    object-fit: cover;
+    width: 94px;
+    height: 88px;
+    object-position: 0% 3%;
 }
 
 #buy-icon {
-    position: fixed;
-    top: 2.5vh;
-    right: 0;
     display: flex;
     width: 50px;
     height: 50px;
@@ -57,15 +69,18 @@ header {
 }
 
 #buy {
-    position: absolute;
+
     display: flex;
     width: 100%;
 }
 
+.carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #mercado {
-    top: 38px;
-    left: 350px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +90,6 @@ header {
 }
 
 #comida-pronta {
-    top: 38px;
-    left: 450px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,9 +97,6 @@ header {
 }
 
 #contato {
-    top: 38px;
-    left: 590px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +121,7 @@ a:hover {
 a:active {
         color: black;
       }
-}
+
 
 @media screen and (max-device-width: 320px) and (max-device-width: 420px) {
 
