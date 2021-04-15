@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -132,7 +131,5 @@ body {
 }
 
 /* CSS Página principal */
-=======
-    font-family: 'Lato', sans-serif;
-}
->>>>>>> aa3fb5a68b2b7892be034cb014c9825706d96be6
+    
+
