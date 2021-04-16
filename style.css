@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +12,130 @@ body {
     height: 100vh;
 }
 
-/* CSS Página principal desktop*/
+
+/* AQUI É O HEADER */
+
+#home {
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100vw;   
+    background-image: linear-gradient(to right, #693920 , #22130b);
+    box-shadow: inset 0px 0px 15px 0px #00000063;
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    
+}
+
+a {
+    margin: 1vw;
+    outline: none;
+}
+
+#all-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+#titulo-header {
+    opacity: 0.9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo-header {
+    display: flex;
+}
+
+#logo {
+    object-fit: cover;
+    width: 94px;
+    height: 88px;
+    object-position: 0% 3%;
+}
+
+#buy-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+#buy {
+
+    display: flex;
+    width: 100%;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mercado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+
+}
+
+#comida-pronta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+a:link {
+        color: white;
+        text-decoration: none;
+      }
+      
+a:visited {
+        color: white;
+      }
+      
+a:hover {
+    color: #fdc400;
+    transition: color .250s ease-in-out;
+}
+      
+a:active {
+        color: black;
+      }
+
+
+@media screen and (max-device-width: 320px) and (max-device-width: 420px) {
+
+}
+
+/* CSS Página principal */
 
 .grid-home {
     display: grid;
@@ -315,6 +439,7 @@ body {
 
 /* CSS Página contato mobile */
 
+    
 /* 
 *
 * PÁGINA MERCADO
@@ -447,3 +572,6 @@ body {
 * PÁGINA MERCADO
 *
 */
+
+/* AQUI É O FOOTER */ 
+
