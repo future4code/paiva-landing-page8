@@ -5,7 +5,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-
 body {
     background-color: rgba(115, 72, 56, 0.4);
     width: 100vw;
@@ -63,7 +62,6 @@ body {
     text-decoration: none;
     color: white;
 }
-
 
 #texto-mercado {
     display: flex;
@@ -135,23 +133,18 @@ body {
 
 /* CSS Página principal mobile*/
 
-@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
-    
-    /* CSS Página principal mobile*/
-    
+@media screen and (max-device-width: 420px) {
     .grid-home {
         display: grid;
         height: 100vh;
         grid-template-rows: 50vh 13vh 90vh 13vh 40vh;
     }
-    
     #background-inicio {
         display: grid;
         background: center transparent url(/img/compras.jpg) no-repeat;
         background-size: 100% 100%;
         grid-template-rows: repeat(3, 1fr);
     }
-    
     #quadro {
         display: flex;
         font-size: 3.5vw;
@@ -168,33 +161,27 @@ body {
         grid-column: 1 / -1;
         border-radius: 0;
     }
-
     #quadro h2 {
         display: flex;
         align-items: flex-start;
         width: 70%;
     }
-    
     #espaco-p {
         font-size: 3.5vw;
         padding-top: 1vh;
         line-height: 2vh;
         width: 70%;
     }
-    
     .config-article {
         display: grid;
         font-size: 3vh;
         margin-top: 8vh;
         text-align: center;
     }
-    
     .config-article a {
         text-decoration: none;
         color: white;
     }
-    
-    
     #texto-mercado {
         display: flex;
         grid-column: 1 / -1;
@@ -202,13 +189,11 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
     #texto-mercado:hover {
         background-color: #5b321c;
         color: black;
         border-radius: 10vh;
     }
-    
     #texto-comida {
         display: flex;
         grid-column: 1 / -1;
@@ -216,25 +201,21 @@ body {
         justify-content: center;
         align-items: center;
     }
-    
     #texto-comida:hover {
         background-color: #5b321c;
         color: black;
         border-radius: 10vh;
     }
-    
     #config-titulo1 {
         margin-top: 12vh;
         text-align: center;
         font-size: 4vh;
     }
-    
     #config-titulo2 {
         margin-top: 12vh;
         text-align: center;
         font-size: 4vh;
     }
-    
     #imagem-mercado {
         grid-column: 1 / -1;
         grid-row: 1 / 5;
@@ -242,7 +223,6 @@ body {
         height: 35%;
         border-radius: 0;
     }
-    
     #imagem-comida {
         grid-column: 1 / -1;
         grid-row: 7 / 11;
@@ -250,12 +230,10 @@ body {
         height: 35%;
         border-radius: 0;
     }
-    
     #red-texto-4foods {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
     }
-    
     #texto-4foods {
         color: #5b321c;
         font-size: 2.5vh;
@@ -263,6 +241,79 @@ body {
     }
 }
 
+/* CSS Página principal mobile*/
+
+/* CSS Página contato desktop */
+
+#form-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5b321c;
+    font-size: 2vh;
+}
+
+#form-edit input[type=text], [type=email] {
+    width: 30vw;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+#form-edit textarea {
+    width: 30vw;
+    height: 20vh;
+    font-size: 2vh;
+}
+
+#form-edit button {
+    width: 5vw;
+    height: 3vh;
+}
+
+#config-contato {
+    margin-bottom: 6vh;
+    font-size: 4vh;
+    color: black;
+}
+
+/* CSS Página contato desktop */
+
+/* CSS Página contato mobile */
+
+@media screen and (max-device-width: 420px) {
+    #form-edit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #5b321c;
+        font-size: 3vh;
+    }
+    #form-edit input[type=text], [type=email] {
+        width: 50vw;
+        height: 4vh;
+        font-size: 2.5vh;
+    }
+    #form-edit textarea {
+        width: 50vw;
+        height: 25vh;
+        font-size: 2.5vh;
+    }
+    #form-edit button {
+        width: 25vw;
+        height: 5vh;
+    }
+    #config-contato {
+        margin-bottom: 6vh;
+        font-size: 4vh;
+        color: black;
+    }
+}
+
+/* CSS Página contato mobile */
 
 /* 
 *
@@ -284,7 +335,7 @@ body {
     align-items: center;
     font-size: 2rem;
     font-style: italic;
-    background-color:#cfa38e;
+    background-color: #cfa38e;
 }
 
 .template-produtos {
@@ -297,11 +348,11 @@ body {
     grid-template-columns: repeat(5, 1fr);
     font-size: 2rem;
     font-style: italic;
-    background-color:#c0aca3a2;
+    background-color: #c0aca3a2;
 }
 
 .pesquisa-produtos {
-    justify-self:normal;
+    justify-self: normal;
 }
 
 .botao-secoes {
@@ -317,21 +368,19 @@ body {
     background-color: #f57749cc;
 }
 
-
 .abas-produtos1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color:#BFACA4;
+    background-color: #BFACA4;
 }
 
 .abas-produtos2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color:#F2F2F2;
+    background-color: #F2F2F2;
 }
 
-.abas-produtos1 div, .abas-produtos2 div,
-.infos-produtos div {
+.abas-produtos1 div, .abas-produtos2 div, .infos-produtos div {
     display: grid;
     justify-self: center;
     align-self: center;
@@ -361,7 +410,7 @@ body {
 .botao-adicionar-quantidade:hover {
     cursor: pointer;
     color: white;
-    background-color:#b3502ddc;
+    background-color: #b3502ddc;
 }
 
 .container-botao-subir {
@@ -374,7 +423,7 @@ body {
     height: 5vh;
     width: 5vw;
     border-radius: 32px;
-    background-color:rgb(119, 160, 48);
+    background-color: rgb(119, 160, 48);
 }
 
 .botao-subir:hover {
@@ -387,13 +436,12 @@ body {
     .afastamento-template {
         padding: 2vw 0 2vw 0;
     }
-
     .infos-produtos {
         font-size: 1rem;
         font-weight: bold;
     }
 }
- 
+
 /* 
 *
 * PÁGINA MERCADO
