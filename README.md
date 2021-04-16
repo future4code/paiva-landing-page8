@@ -5,7 +5,8 @@ Esse é um projeto de Frontend Web feito utilizando HTML e CSS.
 ## Sobre
 
 Projeto básico de site de uma rede de supermercados, visando velocidade e praticidade nas compras online.
-Divisão base de tarefas:
+
+Divisão base(tarefa não só e somente limitada à pessoa) de tarefas :
 - Vitor Suzuki: Header e Footer
 - Bruno Santos: Páginas de compra
 - Pedro Rodrigues: Página Inicial e Contato
