@@ -19,6 +19,13 @@ body {
 
 }
 
+#home-responsive {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    z-index: 1000;
+}
+
 
 header {
     display: flex;
