@@ -6,12 +6,21 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* 
+*
+* PÁGINA MERCADO
+*
+*/
+
 .afastamento-template {
+    display: grid;
+    grid-template-rows: 10vh 1fr;
     padding: 2vw;
+    background-image: url('img/fundo-mercado.jpg');
+    background-size: 100vw;
 }
 
 .titulo-produtos {
-    height: 10vh;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -22,7 +31,7 @@
 
 .template-produtos {
     display: grid;
-    grid-template-rows: repeat(17, 1fr);
+    grid-template-rows: repeat(18, 1fr);
 }
 
 .infos-produtos {
@@ -35,6 +44,19 @@
 
 .pesquisa-produtos {
     justify-self:normal;
+}
+
+.botao-secoes {
+    height: 5vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: #f5774915;
+}
+
+.botao-secoes:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #f57749cc;
 }
 
 
@@ -68,10 +90,49 @@
     text-align: center;
     border-color: #c0aca3a2;
     border-radius: 5px;
+    cursor: pointer;
     background-color: white;
 }
 
 .botao-adicionar-quantidade {
     height: 3vh;
     background-color: #c26d4e8f;
+    border-radius: 8px;
 }
+
+.botao-adicionar-quantidade:hover {
+    cursor: pointer;
+    color: white;
+    background-color:#b3502ddc;
+}
+
+.container-botao-subir {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-subir {
+    height: 5vh;
+    width: 5vw;
+    border-radius: 32px;
+    background-color:rgb(119, 160, 48);
+}
+
+.botao-subir:hover {
+    cursor: pointer;
+    color: goldenrod;
+    background-color: darkolivegreen;
+}
+
+@media screen and (max-device-width: 800px) {
+    .afastamento-template {
+        padding: 2vw 0 2vw 0;
+    }
+
+    .infos-produtos {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+ 
