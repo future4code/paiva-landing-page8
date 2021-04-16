@@ -14,6 +14,7 @@ Projeto básico de site de uma rede de supermercados, visando velocidade e prati
 ## O que não funciona
 
 - Nenhum botão ou envio de formulário
+- O carrinho de compras é só um ícone
 
 ## Imagens do projeto
 
