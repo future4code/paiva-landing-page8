@@ -492,12 +492,16 @@ header a:active {
 *
 */
 
+.espacamento-header {
+    height: 12vh;
+}
+
 .afastamento-template {
     display: grid;
     grid-template-rows: 10vh 1fr;
     padding: 2vw;
     background-image: url('img/fundo-mercado.jpg');
-    background-size: 100vw;
+    background-size: 100% 100vh;
 }
 
 .titulo-produtos {
@@ -506,6 +510,7 @@ header a:active {
     align-items: center;
     font-size: 2rem;
     font-style: italic;
+    font-weight: bold;
     background-color: #cfa38e;
 }
 
@@ -592,7 +597,7 @@ header a:active {
 
 .botao-subir {
     height: 5vh;
-    width: 5vw;
+    width: 10vh;
     border-radius: 32px;
     background-color: rgb(119, 160, 48);
 }
@@ -610,6 +615,20 @@ header a:active {
     .infos-produtos {
         font-size: 1rem;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-device-width: 420px) {
+    .titulo-produtos {
+        font-size: 1.5rem;
+    }
+
+    .info-produtos {
+        font-size: 0.8rem;
+    }
+
+    div form select {
+        width: 64px;
     }
 }
 
