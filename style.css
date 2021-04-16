@@ -649,7 +649,7 @@ header a:active {
 */
 
 .espacamento-header-comida {
-    height: 10vh;
+    height: 9vh;
 }
 
 #layout-fundo-comidas {
@@ -688,7 +688,7 @@ header a:active {
 .arranjo-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 
 .card-comidas {
