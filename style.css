@@ -30,6 +30,7 @@ header {
     width: 100vw;   
     background-image: linear-gradient(to right, #693920 , #22130b);
     box-shadow: inset 0px 0px 15px 0px #00000063;
+    opacity: 0.9;
 }
 
 nav {
