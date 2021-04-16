@@ -667,7 +667,7 @@ header a:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width:30vh;
+    width:100%;
     margin-left: 10vw;
     margin-bottom: 2vh;
     box-shadow: 4px 4px 8px darkgrey;
