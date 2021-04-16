@@ -8,7 +8,7 @@ Projeto básico de site de uma rede de supermercados, visando velocidade e prati
 
 Divisão base(tarefa não só e somente limitada à pessoa) de tarefas :
 - Vitor Suzuki: Header e Footer
-- Bruno Santos: Páginas de compra
+- Bruno Santos: Páginas de Compras
 - Pedro Rodrigues: Página Inicial e Contato
 
 ## O que funciona
