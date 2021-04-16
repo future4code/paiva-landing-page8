@@ -460,6 +460,7 @@ header a:active {
         height: 100vh;
         color: #5b321c;
         font-size: 3vh;
+        padding-top: 15vh;
     }
     #form-edit input[type=text], [type=email] {
         width: 50vw;
@@ -666,7 +667,7 @@ header a:active {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width:30vh;
+    width: 30vh;
     margin-left: 10vw;
     margin-bottom: 2vh;
     box-shadow: 4px 4px 8px darkgrey;
