@@ -492,12 +492,16 @@ header a:active {
 *
 */
 
+.espacamento-header-mercado {
+    height: 8vh;
+}
+
 .afastamento-template {
     display: grid;
     grid-template-rows: 10vh 1fr;
     padding: 2vw;
     background-image: url('img/fundo-mercado.jpg');
-    background-size: 100vw;
+    background-size: 100% 100vh;
 }
 
 .titulo-produtos {
@@ -506,6 +510,7 @@ header a:active {
     align-items: center;
     font-size: 2rem;
     font-style: italic;
+    font-weight: bold;
     background-color: #cfa38e;
 }
 
@@ -592,7 +597,7 @@ header a:active {
 
 .botao-subir {
     height: 5vh;
-    width: 5vw;
+    width: 10vh;
     border-radius: 32px;
     background-color: rgb(119, 160, 48);
 }
@@ -613,6 +618,24 @@ header a:active {
     }
 }
 
+@media screen and (max-device-width: 420px) {
+    .espacamento-header-mercado {
+        height: 10vh;
+    }
+
+    .titulo-produtos {
+        font-size: 1.5rem;
+    }
+
+    .info-produtos {
+        font-size: 0.8rem;
+    }
+
+    div form select {
+        width: 64px;
+    }
+}
+
 /* 
 *
 * PÁGINA MERCADO
@@ -625,9 +648,15 @@ header a:active {
 *
 */
 
+.espacamento-header-comida {
+    height: 10vh;
+}
+
 #layout-fundo-comidas {
     background-image: url('img/fundo-cardapio.jpg');
     text-align: center;
+    padding-top: 3vh;;
+    background-size: 100% 50%;
 }
 
 #titulo-principal-comidas {
@@ -648,7 +677,7 @@ header a:active {
     font-style: italic;
     font-weight: bold;
     font-size: 2rem;
-    background-color: goldenrod;
+    background-color: #cfa38e;
     border-radius: 3vh;
     justify-self: stretch;
     align-self: center;
@@ -659,6 +688,12 @@ header a:active {
 .arranjo-cards {
     display: flex;
     flex-wrap: wrap;
+}
+
+.arranjo-cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10vw;
 }
 
 .card-comidas {
@@ -683,7 +718,6 @@ div div div div {
     align-self: stretch;
     text-align: center;
     padding-top: 2vh;
-    border-top: 2px outset rgba(163, 94, 54, 0.507);
 }
 .botao-pedir {
     margin: 2vh 0;
@@ -710,6 +744,24 @@ div div div div {
     cursor: pointer;
     color: goldenrod;
     background-color: darkolivegreen;
+}
+
+@media screen and (max-device-width: 420px) {
+    .arranjo-cards {
+        justify-content: center;
+    }
+    
+    .card-comidas {
+        margin-left: 0;
+    }
+
+    #layout-fundo-comidas {
+        background-size: 100% 30vh;
+    }
+
+    .arranjo-cards2 {
+        margin-left: 10vw;
+    }
 }
 
 /*
