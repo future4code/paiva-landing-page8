@@ -1,0 +1,772 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: rgba(115, 72, 56, 0.4);
+}
+
+/* AQUI É O HEADER */
+
+#home {
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+
+}
+
+#home-responsive {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    z-index: 1000;
+}
+
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100vw;   
+    background-image: linear-gradient(to right, #693920 , #22130b);
+    box-shadow: inset 0px 0px 15px 0px #00000063;
+    opacity: 0.94;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:radial-gradient( #693920 , #22130b);
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    bottom: 0;
+}
+
+.facebook, .instagram, .twitter {
+    display: flex;
+}
+
+#redes-sociais {
+    object-fit: cover;
+    width: 94px;
+    height: 88px;
+    object-position: 0% 3%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    
+}
+
+main{
+    height: fit-content;
+}
+
+a {
+    margin: 1vw;
+    outline: none;
+}
+
+#all-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+#titulo-header {
+    opacity: 0.9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo-header {
+    display: flex;
+}
+
+#logo {
+    object-fit: cover;
+    width: 94px;
+    height: 88px;
+    object-position: 0% 3%;
+}
+
+#buy-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+#buy {
+
+    display: flex;
+    width: 100%;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mercado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+
+}
+
+#comida-pronta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+header a:link {
+        color: white;
+        text-decoration: none;
+      }
+      
+header a:visited {
+        color: white;
+      }
+      
+header a:hover {
+    color: #fdc400;
+    transition: color .250s ease-in-out;
+}
+      
+header a:active {
+        color: black;
+      }
+
+
+@media screen and (max-width: 375px) {
+    h1 {
+        display: none;
+    }
+
+    nav {
+        margin-left: -11vw;
+        width: 257px;
+    }
+
+    #logo {
+        object-position: 75% 3%;
+    }
+
+    #buy-icon {
+        margin-right: 16px;
+
+    }
+
+    footer {
+        height: 100px;
+    }
+
+}
+
+/* CSS Página principal */
+
+.grid-home {
+    display: grid;
+    height: fit-content;
+    grid-template-rows: 95vh 10vh 90vh 10vh 25vh;
+}
+
+#background-inicio {
+    display: grid;
+    background: center transparent url(/img/compras.jpg) no-repeat;
+    background-size: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+}
+
+#quadro {
+    display: flex;
+    font-size: 2vh;
+    flex-direction: column;
+    line-height: 4vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b321c;
+    width: 100%;
+    height: 100%;
+    color: white;
+    letter-spacing: 0.1vw;
+    grid-row: 2 / 3;
+    border-radius: 2em;
+}
+
+#espaco-p {
+    padding-top: 3vh;
+    line-height: 2;
+    width: 20vw;
+}
+
+.config-article {
+    display: grid;
+    font-size: 3vh;
+    margin-top: 8vh;
+    text-align: center;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.config-article a {
+    text-decoration: none;
+    color: white;
+}
+
+#texto-mercado {
+    display: flex;
+    grid-column: 2 / 6;
+    grid-row: 9 / 10;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-mercado:hover {
+    background-color: #5b321c;
+    color: black;
+    border-radius: 10vh;
+}
+
+#texto-comida {
+    display: flex;
+    grid-column: 7 / 11;
+    grid-row: 9 / 10;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-comida:hover {
+    background-color: #5b321c;
+    color: black;
+    border-radius: 10vh;
+}
+
+#config-titulo1 {
+    margin-top: 12vh;
+    text-align: center;
+    font-size: 4vh;
+}
+
+#config-titulo2 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+#imagem-mercado {
+    grid-column: 2 / 6;
+    grid-row: 2 / 9;
+    width: 100%;
+    height: 60%;
+    border-radius: 2vh;
+}
+
+#imagem-comida {
+    grid-column: 7 / 11;
+    grid-row: 2 / 9;
+    width: 100%;
+    height: 60%;
+    border-radius: 2vh;
+}
+
+#red-texto-4foods {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#texto-4foods {
+    color: #5b321c;
+    font-size: 3vh;
+    grid-column: 2/3;
+}
+
+/* CSS Página principal desktop*/
+
+/* CSS Página principal mobile*/
+
+@media screen and (max-device-width: 420px) {
+    .grid-home {
+        display: grid;
+        grid-template-rows: 60vh 13vh 90vh 13vh 40vh;
+    }
+    #background-inicio {
+        display: grid;
+        background: center transparent url(/img/compras.jpg) no-repeat;
+        background-size: 100% 100%;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #quadro {
+        display: flex;
+        font-size: 3vw;
+        flex-direction: column;
+        line-height: 3.5vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #5b321c;
+        width: 100%;
+        height: 100%;
+        color: white;
+        letter-spacing: 0.1vw;
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        border-radius: 0;
+    }
+    #quadro h2 {
+        display: flex;
+        align-items: flex-start;
+        width: 70%;
+    }
+    #espaco-p {
+        font-size: 3.5vw;
+        padding-top: 1vh;
+        line-height: 2vh;
+        width: 70%;
+    }
+    .config-article {
+        display: grid;
+        font-size: 3vh;
+        margin-top: 8vh;
+        text-align: center;
+    }
+    .config-article a {
+        text-decoration: none;
+        color: white;
+    }
+    #texto-mercado {
+        display: flex;
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+        justify-content: center;
+        align-items: center;
+    }
+    #texto-mercado:hover {
+        background-color: #5b321c;
+        color: black;
+        border-radius: 10vh;
+    }
+    #texto-comida {
+        display: flex;
+        grid-column: 1 / -1;
+        grid-row: 11 / 12;
+        justify-content: center;
+        align-items: center;
+    }
+    #texto-comida:hover {
+        background-color: #5b321c;
+        color: black;
+        border-radius: 10vh;
+    }
+    #config-titulo1 {
+        margin-top: 12vh;
+        text-align: center;
+        font-size: 4vh;
+    }
+    #config-titulo2 {
+        margin-top: 12vh;
+        text-align: center;
+        font-size: 4vh;
+    }
+    #imagem-mercado {
+        grid-column: 1 / -1;
+        grid-row: 1 / 5;
+        width: 100%;
+        height: 35%;
+        border-radius: 0;
+    }
+    #imagem-comida {
+        grid-column: 1 / -1;
+        grid-row: 7 / 11;
+        width: 100%;
+        height: 35%;
+        border-radius: 0;
+    }
+    #red-texto-4foods {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    #texto-4foods {
+        color: #5b321c;
+        font-size: 2.5vh;
+        grid-column: 2/3;
+    }
+}
+
+/* CSS Página principal mobile*/
+
+/* CSS Página contato desktop */
+
+#form-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #5b321c;
+    font-size: 2vh;
+}
+
+#form-edit input[type=text], [type=email] {
+    width: 30vw;
+    height: 4vh;
+    font-size: 2vh;
+}
+
+#form-edit textarea {
+    width: 30vw;
+    height: 20vh;
+    font-size: 2vh;
+}
+
+#form-edit button {
+    width: 5vw;
+    height: 3vh;
+}
+
+#config-contato {
+    margin-bottom: 6vh;
+    font-size: 4vh;
+    color: black;
+}
+
+/* CSS Página contato desktop */
+
+
+/* CSS Página contato mobile */
+
+@media screen and (max-device-width: 420px) {
+    #form-edit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #5b321c;
+        font-size: 3vh;
+        padding-top: 15vh;
+    }
+    #form-edit input[type=text], [type=email] {
+        width: 50vw;
+        height: 4vh;
+        font-size: 2.5vh;
+    }
+    #form-edit textarea {
+        width: 50vw;
+        height: 25vh;
+        font-size: 2.5vh;
+    }
+    #form-edit button {
+        width: 25vw;
+        height: 5vh;
+    }
+    #config-contato {
+        margin-bottom: 6vh;
+        font-size: 4vh;
+        color: black;
+    }
+}
+
+/* CSS Página contato mobile */
+
+    
+
+/* 
+*
+* PÁGINA MERCADO
+*
+*/
+
+.espacamento-header-mercado {
+    height: 8vh;
+}
+
+.afastamento-template {
+    display: grid;
+    grid-template-rows: 10vh 1fr;
+    padding: 2vw;
+    background-image: url('img/fundo-mercado.jpg');
+    background-size: 100% 100vh;
+}
+
+.titulo-produtos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #cfa38e;
+}
+
+.template-produtos {
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.infos-produtos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 2rem;
+    font-style: italic;
+    background-color: #c0aca3a2;
+}
+
+.pesquisa-produtos {
+    justify-self: normal;
+}
+
+.botao-secoes {
+    height: 5vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: #f5774915;
+}
+
+.botao-secoes:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #f57749cc;
+}
+
+.abas-produtos1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #BFACA4;
+}
+
+.abas-produtos2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #F2F2F2;
+}
+
+.abas-produtos1 div, .abas-produtos2 div, .infos-produtos div {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.imagens-produtos {
+    border-radius: 50%;
+    width: 10vw;
+}
+
+.botao-quantidade {
+    height: 3vh;
+    width: 10vh;
+    text-align: center;
+    border-color: #c0aca3a2;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.botao-adicionar-quantidade {
+    height: 3vh;
+    background-color: #c26d4e8f;
+    border-radius: 8px;
+}
+
+.botao-adicionar-quantidade:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #b3502ddc;
+}
+
+.container-botao-subir {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao-subir {
+    height: 5vh;
+    width: 10vh;
+    border-radius: 32px;
+    background-color: rgb(119, 160, 48);
+}
+
+.botao-subir:hover {
+    cursor: pointer;
+    color: goldenrod;
+    background-color: darkolivegreen;
+}
+
+@media screen and (max-device-width: 800px) {
+    .afastamento-template {
+        padding: 2vw 0 2vw 0;
+    }
+    .infos-produtos {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-device-width: 420px) {
+    .espacamento-header-mercado {
+        height: 10vh;
+    }
+
+    .titulo-produtos {
+        font-size: 1.5rem;
+    }
+
+    .info-produtos {
+        font-size: 0.8rem;
+    }
+
+    div form select {
+        width: 64px;
+    }
+}
+
+/* 
+*
+* PÁGINA MERCADO
+*
+*/
+
+/* 
+*
+* PÁGINA COMIDAS
+*
+*/
+
+.espacamento-header-comida {
+    height: 9vh;
+}
+
+#layout-fundo-comidas {
+    background-image: url('img/fundo-cardapio.jpg');
+    text-align: center;
+    padding-top: 3vh;;
+    background-size: 100% 50%;
+}
+
+#titulo-principal-comidas {
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.secoes-casa {
+    display: grid;
+    grid-template-rows: 20vh 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-comidas {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #cfa38e;
+    border-radius: 3vh;
+    justify-self: stretch;
+    align-self: center;
+    display: grid;
+    justify-content: center;
+}
+
+.arranjo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4vw;
+}
+
+.card-comidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30vh;
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+    box-shadow: 4px 4px 8px darkgrey;
+    background-color: #F2F2F2;
+}
+
+.imagens-comidas {
+    border-radius: 50%;
+    height: 20vh;
+    width: 30vh;
+}
+
+div div div div {
+    align-self: stretch;
+    text-align: center;
+    padding-top: 2vh;
+}
+.botao-pedir {
+    margin: 2vh 0;
+    height: 3vh;
+    width: 6vh;
+    border-radius: 2vh;
+    background-color: #c26d4e8f;
+}
+
+.botao-pedir:hover {
+    cursor: pointer;
+    color: white;
+    background-color:#b3502ddc;
+}
+
+.botao-subir-comida {
+    height: 5vh;
+    width: 10vh;
+    border-radius: 32px;
+    background-color:rgb(119, 160, 48);
+}
+
+.botao-subir-comida:hover {
+    cursor: pointer;
+    color: goldenrod;
+    background-color: darkolivegreen;
+}
+
+@media screen and (max-device-width: 420px) {
+    .arranjo-cards {
+        justify-content: center;
+        margin-left: 0;
+    }
+    
+    .card-comidas {
+        margin-left: 0;
+    }
+
+    #layout-fundo-comidas {
+        background-size: 100% 30vh;
+    }
+}
+
+/*
+*
+* PÁGINA COMIDAS
+*
+*/
+
+/* AQUI É O FOOTER */ 
